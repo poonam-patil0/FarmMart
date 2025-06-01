@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style> 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #89dbaf, #cfdfe6);
+    color: #333;
+    padding: 40px 20px;
+  }
+  
+  .contact-section {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .contact-info,
+  .contact-form {
+    flex: 1 1 50%;
+    padding: 40px;
+  }
+  
+  .contact-info h2,
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: #2c5364;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .info-box {
+    background-color: #f0f4f8;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #2c5364;
+    outline: none;
+  }
+  
+  .contact-form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #ff4b2b;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #ff3a1f;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-info,
+    .contact-form {
+      flex: 1 1 100%;
+    }
+  }
+  </style>
+</head>
+<body>
+  <form method="POST" action="contact.php">
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>We'd love to hear from you! Whether you have a question or just want to say hello, reach out to us.</p>
+        <div class="info-box">
+          <p><strong>📍 Address:</strong> 123 Farmer Lane, Organic City</p>
+          <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+          <p><strong>📧 Email:</strong> contact@farmermart.com</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Message</h2>
+        <form>
+          <input type="text" placeholder=" Name" required>
+          <input type="email" placeholder=" Email" required>
+          <textarea placeholder=" Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+      
+      </div>
+    </div>
+  </section>
+</form>
+</body>
+</html>
